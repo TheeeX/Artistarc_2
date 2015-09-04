@@ -1,0 +1,60 @@
+.content-heading,.page-alt .content-heading{
+	background-image:url(./images/bg/alt.jpg)
+	
+}
+
+body{
+	padding-bottom:69px
+	
+}
+
+.content-heading{
+	background-position:50% 50%;background-repeat:no-repeat;
+	background-size:cover;padding-top:68px
+}
+
+.page-blue .content-heading{
+	background-image:url(./images/bg/blue.jpg)
+	
+}
+
+.page-green .content-heading{
+	background-image:url(./images/bg/green.jpg)
+	
+
+}
+
+.page-purple .content-heading{
+	background-image:url(./images/bg/purple.jpg)
+	
+}
+
+.page-red .content-heading{
+	background-image:url(./images/bg/red.jpg)
+	
+}
+
+.page-yellow .content-heading{
+	background-image:url(./images/bg/yellow.jpg)
+	
+}
+
+/** ARTISTARC **/
+
+body{
+	background-color: white!important;
+}
+
+.content-heading, .page-alt .content-heading {
+    background-image: none!important;
+}
+
+.content-heading {
+	padding: 8px!important;
+	margin: 0px!important;
+	background-color: rgba(148, 148, 148, 0.47);
+	
+}
+.header-transparent.affix {
+    background-color: rgba(99, 105, 100, 0.75)!important;
+}
