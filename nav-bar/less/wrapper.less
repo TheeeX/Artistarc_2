@@ -1,0 +1,92 @@
+//
+// Wrapper Bootstrap
+// --------------------------------------------------
+
+.sidebar:not(.sidebar-full-locked) {
+    &.sidebar-fixed-top,
+    &.sidebar-fixed-bottom {
+        z-index: @zindex-sidebar-fixed;
+
+        + .sidebar-swipe {
+            z-index: @zindex-sidebar-fixed - 2;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .sidebar:not(.sidebar-full-locked) {
+        &.sidebar-fixed-top,
+        &.sidebar-fixed-bottom {
+            z-index: @zindex-sidebar;
+
+            + .sidebar-swipe {
+                z-index: @zindex-sidebar - 2;
+            }
+        }
+    }
+}
+
+@media (min-width: (@screen-sm-max + 1)) {
+    .sidebar.sidebar-locked:not(.sidebar-full-locked) {
+        &.sidebar-static-top,
+        &.sidebar-static-bottom {
+            z-index: @zindex-sidebar-static;
+
+            + .sidebar-swipe {
+                z-index: @zindex-sidebar-static - 2;
+            }
+        }
+
+        &.sidebar-static-top {
+            > .sticky-header {
+                padding-top: @navbar-height + 1 !important;
+            }
+
+            .sidebar-menu {
+                > .sidebar-group:first-child,
+                > .sidebar-item:first-child {
+                    padding-top: @navbar-height + 1;
+                }
+            }
+        }
+
+        &.sidebar-static-bottom {
+            .sidebar-menu {
+                > .sidebar-group:last-child,
+                > .sidebar-item:last-child {
+                    padding-bottom: @navbar-height + 1;
+                }
+            }
+        }
+
+        &.sidebar-fixed-top {
+            top: @navbar-height + 1;
+        }
+
+        &.sidebar-fixed-bottom {
+            bottom: @navbar-height + 1;
+        }
+    }
+
+    .container-main {
+        &.container-force-open-left {
+            > .container {
+                padding-left: @sidebar-width + (@grid-gutter-width / 2);
+            }
+
+            > .container-fluid {
+                margin-left: @sidebar-width;
+            }
+        }
+
+        &.container-force-open-right {
+            > .container {
+                padding-right: @sidebar-width + (@grid-gutter-width / 2);
+            }
+
+            > .container-fluid {
+                margin-right: @sidebar-width;
+            }
+        }
+    }
+}

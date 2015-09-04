@@ -1,0 +1,46 @@
+﻿html,
+body,
+.container-main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container-main {
+    overflow-y: auto;
+}
+
+.container-main.container-fixed-top {
+     padding-top: 70px;
+}
+
+.container-main.container-fixed-bottom {
+    padding-bottom: 70px;
+}
+
+.navbar-toggle.btn-sidebar-toggle-left {
+    float: left;
+    margin-left: 15px;
+}
+
+.navbar-toggle.btn-sidebar-toggle-left,
+.navbar-toggle.btn-sidebar-toggle-right {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        width: 100%;
+    }
+
+    .navbar-toggle.btn-sidebar-toggle-left,
+    .navbar-toggle.btn-sidebar-toggle-right {
+        display: inline-block;
+    }
+
+    .navbar-toggle.btn-sidebar-toggle-left.sidebar-locked-toggle,
+    .navbar-toggle.btn-sidebar-toggle-right.sidebar-locked-toggle {
+        display: none;
+    }
+}
