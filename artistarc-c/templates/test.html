@@ -7,11 +7,13 @@
 	<title>Cards - Material</title>
 
 	<!-- css -->
-	<link href="../css/base.min.css" rel="stylesheet">
+	<link href="../css/base.css" rel="stylesheet">
+	<link href="../css/anim-image-1.css" rel="stylesheet">
 	<link href="/artistarc/t_css/test.css" rel="stylesheet">
 
 	<!-- css for this project -->
 	<link href="../css/project.min.css" rel="stylesheet">
+	<link href="../css/card-depth.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -69,7 +71,8 @@
 					<ul class="nav">
 						<li class="active">
 							<a class="waves-attach" href="ui-card.html">Cards</a>
-						</li>
+							<br><br><br><br><br>
+						</li><!--
 						<li>
 							<a class="waves-attach" href="ui-collapse.html">Collapsible Regions</a>
 						</li>
@@ -90,28 +93,15 @@
 						</li>
 						<li>
 							<a class="waves-attach" href="ui-tile.html">Tiles</a>
-						</li>
+						</li>-->
 					</ul>
 					<hr>
 					<ul class="nav">
 						<li>
 							<a class="waves-attach" href="ui-button.html">Buttons</a>
+							<br><br><br><br><br>
 						</li>
-						<li>
-							<a class="waves-attach" href="ui-form.html">Form Elements</a>
-							<span class="menu-collapse-toggle collapsed" data-target="#form-elements" data-toggle="collapse"><i class="icon menu-collapse-toggle-close">close</i><i class="icon menu-collapse-toggle-default">add</i></span>
-							<ul class="menu-collapse collapse" id="form-elements">
-								<li>
-									<a class="waves-attach" href="ui-form-adv.html">Form Elements <small>(materialised)</small></a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="waves-attach" href="ui-icon.html">Icons</a>
-						</li>
-						<li>
-							<a class="waves-attach" href="ui-table.html">Tables</a>
-						</li>
+
 					</ul>
 					<hr>
 					<ul class="nav">
@@ -120,19 +110,7 @@
 							<span class="menu-collapse-toggle collapsed" data-target="#page-palettes" data-toggle="collapse"><i class="icon menu-collapse-toggle-close">close</i><i class="icon menu-collapse-toggle-default">add</i></span>
 							<ul class="menu-collapse collapse" id="page-palettes">
 								<li>
-									<a class="waves-attach" href="page-palette-blue.html">Blue Palette</a>
-								</li>
-								<li>
-									<a class="waves-attach" href="page-palette-green.html">Green Palette</a>
-								</li>
-								<li>
-									<a class="waves-attach" href="page-palette-purple.html">Purple Palette</a>
-								</li>
-								<li>
-									<a class="waves-attach" href="page-palette-red.html">Red Palette</a>
-								</li>
-								<li>
-									<a class="waves-attach" href="page-palette-yellow.html">Yellow Palette</a>
+									<br><br><br><br><br><br>
 								</li>
 							</ul>
 						</li>
@@ -178,32 +156,209 @@
 			</div>
 		</div>
 		<div style="max-width:90%!important" class="container">
-			<section class="#content-inner">
+			<section class="content-inner">
 				<h2 class="content-sub-heading">Basic Cards</h2>
 				<div class="card-wrap">
 					<div class="row">
+						
+					<!---------------------------------------
+					*		COLUMN - 1		*
+					*-------------------------------------s-->
+						
 						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="card">
+							<div class="card card-blue" >
 								<div class="card-main">
 									<div class="card-inner">
-										<p class="card-heading">Default Card!</p>
+										<p class="card-heading text-blue">Blue Card!</p>
 										<p>
 											Lorem ipsum dolor sit amet.<br>
-											Consectetur adipiscing elit.
+											Consectetur adipscing elit.<br>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.
 										</p>
 									</div>
 									<div class="card-action">
 										<div class="card-action-btn pull-left">
-											<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
+											<a class="btn btn-flat btn-blue waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
 										</div>
 									</div>
 								</div>
 							</div>
 							
+							<div class="card-sd" z-default=1 z-hover=2>
+							<p>I am content! class</p>
+							</div>
+							
+							<div class="card-sd" z-default="10" z-hover="30" style="display: block; margin: 25px; height: 100px; transition: box-shadow 0.15s; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); padding: 10px; box-shadow: rgb(85, 85, 85) 0px 2px 3.33333333333333px;" z="30">
+  <p>I am content!</p>
+</div>
+							
+							<!--<div class="card card-alt-bg">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Brand Colour!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+											
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach waves-light" href="javascript:void(0)"><span class="icon text-white">check</span>&nbsp;<span class="text-white">Button</span></a>
+										</div>
+									</div>
+								</div>
+							</div>-->
+							
+							<div class="card card-offwhite-bg">
+								<div class="card card-im transition">
+								<div class="card-main">
+								  <h2 class="im transition">Awesome Headline</h2>
+								  <p class="im">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								  <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
+								  <div class="card_circle transition"></div>
+							</div>
+							</div>
+							</div>
+							
+							<!--<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="card card-im transition">
+								<div class="card-main">
+								  <h2 class="im transition">Awesome Headline</h2>
+								  <p class="im">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								  <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
+								  <div class="card_circle transition"></div>
+							</div>
+							</div>
+							</div>-->
+						</div>
+						
+						
+						<!---------------------------------------
+						*		COLUMN - 2		*
+						*--------------------------------------->
+						
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="card card-green">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading text-green">Green Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat btn-green waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card card-blue-bg">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Blue Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+											Consectetur adipscing elit.<br>
+											Lorem ipsum dolor sit amet.<br>
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach waves-light" href="javascript:void(0)"><span class="icon text-white">check</span>&nbsp;<span class="text-white">Button</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-red-bg">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Red Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipiscing elit.
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach waves-light" href="javascript:void(0)"><span class="icon text-white">check</span>&nbsp;<span class="text-white">Button</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card card-yellow-bg">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Red Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipiscing elit.
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach waves-light" href="javascript:void(0)"><span class="icon text-white">check</span>&nbsp;<span class="text-white">Button</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						
+						<!---------------------------------------
+						*		COLUMN - 3		*
+						*--------------------------------------->
+						
+						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
 										<p class="card-heading">Default Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipiscing elit.
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-green-bg">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Green Card!</p>
+										<p>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+											Lorem ipsum dolor sit amet.<br>
+											Consectetur adipscing elit.<br>
+										</p>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<a class="btn btn-flat waves-attach waves-light" href="javascript:void(0)"><span class="icon text-white">check</span>&nbsp;<span class="text-white">Button</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card card-offwhite">
+								<div class="card-main">
+									<div class="card-inner">
+										<p class="card-heading">Off-white Card!</p>
 										<p>
 											Lorem ipsum dolor sit amet.<br>
 											Consectetur adipiscing elit.
@@ -217,73 +372,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="card card-alt">
-								<div class="card-main">
-									<div class="card-inner">
-										<p class="card-heading text-alt">Brand Colour!</p>
-										<p>
-											Lorem ipsum dolor sit amet.<br>
-											Consectetur adipiscing elit.
-										</p>
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<a class="btn btn-flat btn-alt waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-main">
-									<div class="card-inner">
-										<p class="card-heading">Default Card!</p>
-										<p>
-											Lorem ipsum dolor sit amet.<br>
-											Consectetur adipiscing elit.
-										</p>
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-main">
-									<div class="card-inner">
-										<p class="card-heading">Default Card!</p>
-										<p>
-											Lorem ipsum dolor sit amet.<br>
-											Consectetur adipiscing elit.
-										</p>
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="card card-alt">
-								<div class="card-main">
-									<div class="card-inner">
-										<p class="card-heading text-alt">Brand Colour!</p>
-										<p>
-											Lorem ipsum dolor sit amet.<br>
-											Consectetur adipiscing elit.
-										</p>
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<a class="btn btn-flat btn-alt waves-attach" href="javascript:void(0)"><span class="icon">check</span>&nbsp;Button</a>
-										</div>
-									</div>
-								</div>
-							</div>
+
 						</div>
 						
 					</div>
@@ -312,8 +401,9 @@
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="../js/base.min.js"></script>
-
+	
 	<!-- js for this project -->
 	<script src="../js/project.min.js"></script>
+	<script src="../js/card-depth.js"></script>
 </body>
 </html>
